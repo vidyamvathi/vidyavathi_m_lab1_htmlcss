@@ -1,0 +1,93 @@
+<style>
+  .menu-items {
+    padding: 5px;
+    margin: 0;
+    list-style-type: none;
+  }
+
+  #main-menu {
+    background-color: darkgray;
+  }
+
+  #main-menu>li {
+    display: inline-block;
+  }
+
+  #main-menu>li>a {
+    padding: 8px;
+    color: white;
+  }
+
+  #main-menu>li>a:hover {
+    background-color: black;
+  }
+
+  #main-menu-item-2 {
+    position: relative;
+  }
+
+  #sub-menu {
+    position: absolute;
+    background-color: lightgray;
+    white-space: nowrap;
+    top: 30px;
+    padding: 10px 20px;
+    display: none;
+  }
+
+  #main-menu-item-2:hover #sub-menu {
+    display: block;
+  }
+
+  header h1 {
+    background-color: red;
+    margin: 0%;
+    text-align: right;
+    padding: 15px 35px;
+  }
+</style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Demo of Dropdown</h1>
+  </header>
+
+  <nav>
+
+    <ul id="main-menu" class="menu-items">
+
+      <li>
+        <a href="link1">Link-1</a>
+      </li>
+
+      <li id="main-menu-item-2">
+
+        <a href="link2">Link-2</a>
+
+        <ul id="sub-menu" class="menu-items">
+
+          <li>
+            <a href="/dd-link1">DD Link-1</a>
+          </li>
+
+          <li>
+            <a href="/dd-link2">DD Link-2</a>
+          </li>
+
+          <li>
+            <a href="/dd-link3">DD Link-3</a>
+          </li>
+
+        </ul>
+      </li>
+
+      <li>
+        <a href="link3">Link-3</a>
+      </li>
+    </ul>
+
+  </nav>
+
+</body>
